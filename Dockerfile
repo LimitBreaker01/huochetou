@@ -1,7 +1,6 @@
 FROM debian
 RUN apt update
 RUN apt install ssh wget npm curl -y
-RUN curl -fsSL git.io/speedtest-cli.sh | sudo bash
 RUN  npm install -g wstunnel
 RUN mkdir /run/sshd 
 RUN echo 'wstunnel -s 0.0.0.0:80 &' >>/1.sh
