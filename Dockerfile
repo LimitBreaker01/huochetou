@@ -1,6 +1,6 @@
 FROM debian
 RUN apt update
-RUN apt install ssh wget npm -y
+RUN apt install ssh wget npm rar -y
 RUN  npm install -g wstunnel
 RUN mkdir /run/sshd 
 RUN echo 'wstunnel -s 0.0.0.0:80 &' >>/1.sh
